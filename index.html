@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6eee2" />
+  <meta name="description" content="Los quince años de Jenedith Chumpitaz Ortega" />
+  <title>Mis 15 años · Jenedith</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div><canvas id="sparkles" aria-hidden="true"></canvas>
+  <div id="welcome" class="welcome"><div class="welcome-card">
+    <span class="crown">♕</span><p class="eyebrow">MIS 15 AÑOS</p><h1>Jenedith</h1><p class="welcome-name">Chumpitaz Ortega</p>
+    <span class="rule">✦</span><p class="welcome-copy">Una noche para atesorar siempre</p>
+    <button class="gold-button entrance" id="enter"><span>Entrar a la invitación</span><i class="fa-solid fa-arrow-right"></i></button>
+  </div></div>
+
+  <main id="experience" aria-hidden="true">
+    <header class="topbar"><a href="#hero" class="brand">J<span>✦</span>O</a><button class="sound-toggle" id="sound" aria-label="Reproducir música"><i class="fa-solid fa-play"></i><span>Perfect · Ed Sheeran</span></button><button class="menu" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button></header>
+    <audio id="audio" loop preload="none"><source src="assets/music/perfect-ed-sheeran.mp3" type="audio/mpeg"></audio>
+    <section class="hero" id="hero"><div class="hero-image"></div><div class="hero-shade"></div><div class="hero-content">
+      <span class="crown hero-crown">♕</span><p class="eyebrow">MIS 15 AÑOS</p><div class="diamond-rule">✦</div>
+      <h2>Jenedith</h2><p class="surname">Chumpitaz Ortega</p><p class="chapter">Un nuevo capítulo comienza</p>
+      <p class="date">17 · OCTUBRE · 2026</p><div class="countdown" aria-label="Cuenta regresiva"><div><b id="days">00</b><small>DÍAS</small></div><div><b id="hours">00</b><small>HORAS</small></div><div><b id="minutes">00</b><small>MINUTOS</small></div><div><b id="seconds">00</b><small>SEGUNDOS</small></div></div>
+    </div><a class="scroll-cue" href="#event"><span>Descubre</span><i class="fa-solid fa-chevron-down"></i></a></section>
+
+    <section class="intro section reveal"><p class="script">Hay momentos en la vida</p><p>que son especiales por sí solos, pero compartirlos con las personas que quieres los convierte en inolvidables.</p><div class="ornament">— <i class="fa-regular fa-heart"></i> —</div></section>
+    <section id="event" class="event section"><div class="event-card reveal"><p class="section-kicker">CELEBREMOS JUNTOS</p><h3>El gran día</h3><div class="event-grid"><div><i class="fa-regular fa-calendar-days"></i><p><b>VIERNES</b><br>17 DE OCTUBRE<br>7:00 P.M.</p></div><div><i class="fa-solid fa-location-dot"></i><p><b>UNIKA CAMPESTRE</b><br>Av. 200 Millas Mz. X Lt. 1<br>Villa El Salvador, Lima</p></div></div><a class="outline-button" target="_blank" rel="noreferrer" href="https://maps.google.com/?q=Unika+Campestre+Lima"><i class="fa-solid fa-location-dot"></i> Ver ubicación <i class="fa-solid fa-arrow-right"></i></a><a class="gold-button whatsapp" target="_blank" rel="noreferrer" href="https://wa.me/51999999999?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%2015%20a%C3%B1os%20de%20Jenedith."><i class="fa-brands fa-whatsapp"></i><span>Confirmar asistencia<br><small>por WhatsApp</small></span><i class="fa-solid fa-arrow-right"></i></a><em>Tu presencia hará este día aún más especial</em></div></section>
+    <section class="details section"><div class="detail reveal"><i class="fa-solid fa-chess-queen"></i><h4>Dress code</h4><p>Formal elegante</p><div class="swatches"><span></span><span></span><span></span></div></div><div class="detail reveal"><i class="fa-solid fa-gift"></i><h4>Sugerencia<br>de regalo</h4><p>Lluvia de sobres</p></div></section>
+    <section class="timeline section reveal"><p class="section-kicker">NUESTRA NOCHE</p><h3>Cronograma</h3><div class="timeline-line"><div><b>7:00</b><span>Recepción</span></div><div><b>8:00</b><span>Vals y brindis</span></div><div><b>9:00</b><span>Celebración</span></div></div></section>
+    <section class="gallery section reveal"><p class="script">Un vistazo a la magia</p><h3>Galería</h3><div class="gallery-grid"><button class="photo tall" data-full="assets/images/hero-jenedith.png"><img src="assets/images/hero-jenedith.png" alt="Jenedith en su celebración" loading="lazy"></button><button class="photo" data-full="assets/images/hero-jenedith.png"><img src="assets/images/hero-jenedith.png" alt="Detalles dorados" loading="lazy"></button><button class="photo" data-full="assets/images/hero-jenedith.png"><img src="assets/images/hero-jenedith.png" alt="Ambiente de celebración" loading="lazy"></button></div><button id="morePhotos" class="outline-button"><i class="fa-regular fa-images"></i> Ver más fotos</button></section>
+    <section class="story section reveal"><p class="section-kicker">MI HISTORIA</p><h3>Un sueño hecho<br><em>realidad</em></h3><p id="typewriter" data-text="Hoy celebro los recuerdos que me trajeron hasta aquí y la ilusión de todo lo que está por venir."></p></section>
+    <footer class="final section"><div class="floral floral-left">✾</div><div class="floral floral-right">✾</div><p class="script">Gracias por ser parte<br>de esta historia</p><i class="fa-regular fa-heart"></i><p class="footer-mini">CON CARIÑO, JENEDITH</p><div class="footer-line"></div></footer>
+  </main>
+  <dialog id="lightbox"><button class="close-lightbox" aria-label="Cerrar">×</button><img src="" alt="Galería ampliada"></dialog>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="script.js"></script>
+</body></html>
