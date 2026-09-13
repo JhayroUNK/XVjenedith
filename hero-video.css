@@ -1,0 +1,54 @@
+/* Video de portada: la fotografía permanece detrás como respaldo durante la carga. */
+.hero-image {
+  overflow: hidden;
+  background: url("assets/images/hero-jenedith.png") 37% center / cover no-repeat;
+  animation: none !important;
+  transform: none !important;
+  will-change: auto;
+}
+
+/* Elimina la antigua retícula decorativa que se veía como rayas sobre el video. */
+.hero::after {
+  background: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 37% center;
+  opacity: 0;
+  filter: saturate(.91) contrast(1.03) brightness(.96);
+  transform: none;
+  backface-visibility: hidden;
+  transition: opacity 1.1s ease;
+}
+
+.hero-video.is-ready {
+  opacity: 1;
+}
+
+.hero-video.is-reversing {
+  opacity: 1;
+}
+
+.hero-video.has-error {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hero-video {
+    object-position: 38% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none !important;
+  }
+}

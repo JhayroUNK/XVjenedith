@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Código QR de Yape de muestra</title>
+  <desc id="desc">Imagen temporal que debe reemplazarse por el código QR real.</desc>
+  <rect width="240" height="240" rx="16" fill="#fffdf7"/>
+  <g fill="#593517">
+    <path d="M20 20h62v62H20zm12 12v38h38V32zm9 9h20v20H41zM158 20h62v62h-62zm12 12v38h38V32zm9 9h20v20h-20zM20 158h62v62H20zm12 12v38h38v-38zm9 9h20v20H41z"/>
+    <path d="M98 20h14v14H98zm28 0h18v14h-18zM92 45h22v14H92zm32 0h14v28h-14zM93 70h17v17H93zm29 13h20v14h-20zm28 14h14v18h-14zm22-3h20v14h-20zm28 0h20v28h-20zM20 98h18v18H20zm29-4h14v28H49zm24 4h19v14H73zm18 20h17v17H91zm-69 13h29v14H22zm43 0h18v28H65zm21-8h14v20H86zm112 7h22v14h-22zm-29-4h16v29h-16zm-24 8h14v14h-14zm-18-22h17v17h-17zm-26 41h18v15h-18zm27-1h14v29h-14zm25 9h22v14h-22zm29-1h16v30h-16zm20 12h18v15h-18zm-86 18h20v14h-20zm31 2h14v28h-14zm24-1h18v14h-18zm28 4h14v24h-14zm25 7h16v18h-16zm-90 5h16v14h-16z"/>
+  </g>
+  <circle cx="120" cy="120" r="35" fill="#fffaf0" stroke="#b77a35" stroke-width="3"/>
+  <text x="120" y="113" text-anchor="middle" fill="#5b3316" font-family="Georgia,serif" font-size="16" font-style="italic">mi</text>
+  <text x="120" y="137" text-anchor="middle" fill="#5b3316" font-family="Arial,sans-serif" font-size="22" font-weight="700">yape</text>
+</svg>

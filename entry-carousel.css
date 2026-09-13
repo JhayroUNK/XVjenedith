@@ -1,0 +1,9 @@
+/* Transición de acceso estilo carrusel cinematográfico */
+.entry-carousel{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.carousel-panel{position:absolute;inset:-8%;background:url('assets/images/hero-jenedith.png') 37% center/cover;opacity:0;will-change:transform,opacity,filter}
+.panel-one{filter:brightness(.55) saturate(.85);transform:translateX(-105%) scale(1.08)}
+.panel-two{background-position:75% center;filter:sepia(.28) brightness(.8);transform:translateX(105%) scale(1.08)}
+.panel-three{filter:brightness(1.12) saturate(.75);transform:translateY(105%) scale(1.12)}
+.carousel-flash{position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 50% 50%,#fffdf6 0 4%,#f6c476a8 20%,transparent 65%)}
+.welcome-card{z-index:1}
+.welcome.carousel-active .welcome-card{pointer-events:none}

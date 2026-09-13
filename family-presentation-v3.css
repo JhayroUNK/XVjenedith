@@ -1,0 +1,208 @@
+/* Emblema y presentación familiar en una composición vertical continua. */
+.fifteen-section,
+.family-section {
+  position: relative;
+  max-width: 840px;
+}
+
+.fifteen-section {
+  padding: 35px 15px 0 !important;
+}
+
+.fifteen-section::before {
+  inset: 0 -8% -65% !important;
+  background:
+    radial-gradient(ellipse at 50% 17%, rgba(255, 247, 225, .96), transparent 43%),
+    radial-gradient(ellipse at 50% 68%, rgba(221, 174, 105, .12), transparent 65%) !important;
+}
+
+.fifteen-photo-emblem {
+  width: min(96vw, 455px) !important;
+  filter: drop-shadow(0 24px 34px rgba(91, 54, 22, .16)) !important;
+}
+
+.fifteen-copy {
+  margin: -8px auto 0 !important;
+  color: #653a20 !important;
+  font: italic clamp(24px, 6.2vw, 35px)/1.2 "Cormorant Garamond", serif !important;
+  letter-spacing: .015em !important;
+}
+
+.family-section {
+  overflow: hidden;
+  padding: 24px 16px 44px !important;
+  background:
+    radial-gradient(ellipse at 50% 45%, rgba(255, 253, 247, .82), transparent 72%),
+    linear-gradient(90deg, transparent, rgba(239, 211, 170, .1), transparent);
+}
+
+.family-section::before,
+.family-section::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 320px;
+  height: 720px;
+  top: 10%;
+  border: 1px solid rgba(200, 145, 75, .21);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.family-section::before {
+  left: -270px;
+  transform: rotate(-13deg);
+}
+
+.family-section::after {
+  right: -270px;
+  transform: rotate(13deg);
+}
+
+.family-card {
+  position: relative;
+  overflow: visible !important;
+  padding: 0 5px 10px !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.family-card::before {
+  display: none !important;
+}
+
+.family-top-divider,
+.family-bottom-divider {
+  display: grid;
+  grid-template-columns: minmax(65px, 1fr) auto minmax(65px, 1fr);
+  align-items: center;
+  gap: 14px;
+  width: min(100%, 630px);
+  margin: 0 auto;
+  color: #b26d20;
+  font-size: 18px;
+}
+
+.family-top-divider::before,
+.family-top-divider::after,
+.family-bottom-divider::before,
+.family-bottom-divider::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd792b);
+}
+
+.family-top-divider::after,
+.family-bottom-divider::after {
+  background: linear-gradient(90deg, #bd792b, transparent);
+}
+
+.family-card > .section-kicker {
+  margin: 34px 0 27px !important;
+  color: #49281b !important;
+  font: 600 clamp(12px, 3.3vw, 17px)/1.2 "Cormorant Garamond", serif !important;
+  letter-spacing: clamp(.26em, 1vw, .46em) !important;
+}
+
+.family-columns {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0 !important;
+  margin: 0 !important;
+}
+
+.family-group {
+  position: relative;
+  padding: 0 2px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.family-group + .family-group {
+  padding-top: 0 !important;
+  border: 0 !important;
+}
+
+.family-role {
+  display: grid !important;
+  grid-template-columns: minmax(34px, 82px) auto minmax(34px, 82px);
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  color: #a46520 !important;
+  font: 600 clamp(13px, 3.8vw, 18px)/1 "Cormorant Garamond", serif !important;
+  letter-spacing: clamp(.19em, .85vw, .34em) !important;
+  white-space: nowrap;
+}
+
+.family-role::before,
+.family-role::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c38539);
+}
+
+.family-role::after {
+  background: linear-gradient(90deg, #c38539, transparent);
+}
+
+.family-group h3 {
+  display: grid !important;
+  gap: 4px !important;
+  margin: 22px 0 0 !important;
+  color: #49271c;
+  font: italic 500 clamp(27px, 7vw, 42px)/1.04 "Cormorant Garamond", serif !important;
+  letter-spacing: -.015em !important;
+}
+
+.family-group h3 > span {
+  display: block;
+  color: inherit !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+}
+
+.family-group h3 i {
+  display: block;
+  margin: 4px 0 2px;
+  color: #ad6b21 !important;
+  font: italic 500 clamp(26px, 6.7vw, 38px)/.8 "Cormorant Garamond", serif !important;
+}
+
+.family-middle-divider {
+  display: grid;
+  grid-template-columns: minmax(65px, 1fr) auto minmax(65px, 1fr);
+  align-items: center;
+  gap: 14px;
+  width: min(100%, 610px);
+  margin: 35px auto 34px;
+  color: #b26d20;
+  font: 28px/1 "Cormorant Garamond", serif;
+}
+
+.family-middle-divider::before,
+.family-middle-divider::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd792b);
+}
+
+.family-middle-divider::after {
+  background: linear-gradient(90deg, #bd792b, transparent);
+}
+
+.family-bottom-divider {
+  margin-top: 39px;
+}
+
+@media (max-width: 370px) {
+  .fifteen-copy { font-size: 22px !important; }
+  .family-card > .section-kicker { letter-spacing: .25em !important; }
+  .family-group h3 { font-size: 25px !important; }
+}
+
+@media (min-width: 650px) {
+  .family-section { padding-right: 42px !important; padding-left: 42px !important; }
+  .family-card > .section-kicker { margin-top: 40px !important; }
+}

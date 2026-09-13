@@ -1,0 +1,362 @@
+/* Código de vestimenta y obsequio: tarjetas editoriales inspiradas en papelería de lujo. */
+.details,
+.gift-section {
+  position: relative;
+  width: min(100%, 760px);
+  max-width: 760px;
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
+
+.details {
+  display: block !important;
+  padding-top: 46px !important;
+  padding-bottom: 18px !important;
+}
+
+.details::before {
+  top: 0 !important;
+  left: 50%;
+  height: 46px !important;
+  background: linear-gradient(transparent, #ba7628) !important;
+}
+
+.dress-detail,
+.gift-card {
+  isolation: isolate;
+  width: 100% !important;
+  max-width: none !important;
+  border: 1px solid #c9832e !important;
+  border-radius: 27px !important;
+  background:
+    radial-gradient(circle at 50% 0, rgba(255,255,255,.95), transparent 42%),
+    linear-gradient(145deg, rgba(255,253,247,.97), rgba(249,238,219,.94)) !important;
+  box-shadow: 0 24px 60px rgba(92,49,15,.12), inset 0 0 45px rgba(224,178,108,.1) !important;
+}
+
+.dress-detail::before,
+.gift-card::before {
+  content: "" !important;
+  position: absolute;
+  inset: 8px !important;
+  display: block !important;
+  border: 1px solid rgba(205,143,67,.48) !important;
+  border-radius: 20px !important;
+  pointer-events: none;
+}
+
+.dress-detail {
+  min-height: 0 !important;
+  padding: 27px 22px 25px !important;
+  overflow: hidden;
+}
+
+.dress-heading-rule {
+  display: grid;
+  grid-template-columns: minmax(35px, 1fr) 62px minmax(35px, 1fr);
+  align-items: center;
+  gap: 13px;
+  max-width: 520px;
+  margin: 0 auto 15px;
+}
+
+.dress-heading-rule > span {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c48131);
+}
+
+.dress-heading-rule > span:last-child {
+  background: linear-gradient(90deg, #c48131, transparent);
+}
+
+.dress-seal {
+  width: 62px !important;
+  height: 62px !important;
+  margin: 0 !important;
+  border: 1px solid #d4a35f !important;
+  background: rgba(255,252,244,.92) !important;
+  box-shadow: 0 8px 22px rgba(113,65,19,.13), inset 0 0 0 5px rgba(239,211,170,.2) !important;
+}
+
+.dress-seal i {
+  color: #a6631a;
+  font-size: 27px !important;
+}
+
+.dress-detail > .section-kicker {
+  margin: 4px 0 4px !important;
+  color: #55301d !important;
+  font: 600 clamp(13px, 3.8vw, 18px)/1.2 "Cormorant Garamond", serif !important;
+  letter-spacing: clamp(.22em, 1vw, .42em) !important;
+}
+
+.dress-detail h4 {
+  margin: 8px 0 11px !important;
+  color: #4b291b;
+  font: italic 500 clamp(40px, 12vw, 68px)/.95 "Cormorant Garamond", serif !important;
+  letter-spacing: -.025em !important;
+}
+
+.dress-rule {
+  display: grid !important;
+  grid-template-columns: minmax(45px, 115px) auto minmax(45px, 115px);
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin: 16px auto 15px !important;
+  color: #b06b1e !important;
+}
+
+.dress-rule::before,
+.dress-rule::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c38337);
+}
+
+.dress-rule::after {
+  background: linear-gradient(90deg, #c38337, transparent);
+}
+
+.dress-copy {
+  margin: 0 !important;
+  color: #4e3021;
+  font: 500 clamp(18px, 5.2vw, 26px)/1.22 "Cormorant Garamond", serif !important;
+}
+
+.dress-figures {
+  width: min(100%, 470px);
+  margin: 17px auto 9px;
+}
+
+.dress-figures img {
+  display: block;
+  width: 100%;
+  height: auto;
+  content: url("assets/images/dress-code-figures-v2.png");
+  filter: drop-shadow(0 12px 16px rgba(92,51,16,.08));
+}
+
+.dress-closing {
+  position: relative;
+  display: block;
+  width: min(100%, 590px);
+  padding: 0 clamp(42px, 14vw, 92px);
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin: 2px 0 0 !important;
+  color: #5f3922 !important;
+  font: 600 clamp(10px, 2.8vw, 14px)/1.45 "Cormorant Garamond", serif !important;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.dress-closing::before,
+.dress-closing::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: clamp(30px, 11vw, 74px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c48337);
+}
+
+.dress-closing::after {
+  right: 0;
+  left: auto;
+  background: linear-gradient(90deg, #c48337, transparent);
+}
+
+.dress-closing span {
+  display: block;
+}
+
+.gift-section {
+  padding-top: 18px !important;
+  padding-bottom: 45px !important;
+}
+
+.gift-card {
+  position: relative;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 116px;
+  align-items: center !important;
+  gap: 19px !important;
+  padding: 31px 24px !important;
+  text-align: left !important;
+  overflow: hidden;
+}
+
+.gift-copy {
+  min-width: 0;
+}
+
+.gift-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gift-kicker > i {
+  color: #aa681d !important;
+  font-size: 29px !important;
+}
+
+.gift-copy .section-kicker {
+  margin: 0 !important;
+  color: #5c3822 !important;
+  font: 600 clamp(10px, 2.8vw, 14px)/1.2 "Cormorant Garamond", serif !important;
+  letter-spacing: clamp(.18em, .75vw, .34em) !important;
+}
+
+.gift-copy h3 {
+  margin: 16px 0 9px !important;
+  color: #4b2a1a;
+  font: 500 clamp(34px, 8.2vw, 52px)/.82 "Cormorant Garamond", serif !important;
+  letter-spacing: -.02em;
+}
+
+.gift-copy h3 em {
+  display: inline-block;
+  margin-top: 10px;
+  color: #a45f17 !important;
+  font: 400 clamp(39px, 10vw, 62px)/.8 "Great Vibes", cursive !important;
+  white-space: nowrap;
+}
+
+.gift-heart-rule {
+  display: grid;
+  grid-template-columns: minmax(40px, 92px) auto minmax(40px, 92px);
+  align-items: center;
+  justify-content: start;
+  gap: 9px;
+  width: min(100%, 255px);
+  margin: 20px 0 16px;
+  color: #a8661d;
+  font: 32px/1 "Cormorant Garamond", serif;
+}
+
+.gift-heart-rule::before,
+.gift-heart-rule::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c17e31);
+}
+
+.gift-heart-rule::after {
+  background: linear-gradient(90deg, #c17e31, transparent);
+}
+
+.gift-copy > p:last-child {
+  margin: 0 !important;
+  color: #4f3324;
+  font: 500 clamp(16px, 4.1vw, 21px)/1.35 "Cormorant Garamond", serif !important;
+}
+
+.gift-qr-wrap {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.qr-placeholder {
+  width: 116px !important;
+  min-width: 116px !important;
+  padding: 7px;
+  border: 1px solid #bd7b30 !important;
+  border-radius: 13px !important;
+  aspect-ratio: 1 !important;
+  background: #fffdf8 !important;
+  box-shadow: 0 10px 24px rgba(88,48,13,.15), inset 0 0 0 4px #f4e2c7 !important;
+}
+
+.qr-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.gift-qr-wrap strong {
+  margin-top: 8px;
+  color: #5d371e;
+  font: 600 13px/1 "Cormorant Garamond", serif;
+  letter-spacing: .19em;
+}
+
+.gift-qr-wrap small {
+  margin-top: 4px;
+  color: #795338;
+  font: 13px/1.2 "Cormorant Garamond", serif;
+}
+
+.gift-thanks {
+  display: grid;
+  grid-template-columns: 32px auto 32px;
+  align-items: center;
+  gap: 7px;
+  margin-top: 16px;
+  color: #a6671f;
+  font-size: 13px;
+}
+
+.gift-thanks::before,
+.gift-thanks::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #bd7b2c);
+}
+
+.gift-thanks::after {
+  background: linear-gradient(90deg, #bd7b2c, transparent);
+}
+
+.gift-qr-wrap em {
+  margin-top: 7px;
+  color: #68422a;
+  font: 600 12px/1 "Cormorant Garamond", serif;
+  letter-spacing: .22em;
+}
+
+@media (max-width: 430px) {
+  .dress-detail { padding-right: 15px !important; padding-left: 15px !important; }
+  .dress-heading-rule { grid-template-columns: minmax(25px, 1fr) 56px minmax(25px, 1fr); }
+  .dress-seal { width: 56px !important; height: 56px !important; }
+  .dress-closing { letter-spacing: .19em; }
+  .gift-card {
+    grid-template-columns: 1fr;
+    gap: 25px !important;
+    padding: 29px 21px 27px !important;
+    text-align: center !important;
+  }
+  .gift-kicker { justify-content: center; }
+  .gift-heart-rule { justify-content: center; margin-right: auto; margin-left: auto; }
+  .gift-copy h3 em { white-space: normal; }
+  .gift-qr-wrap::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    width: 150px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c88b42, transparent);
+  }
+}
+
+@media (min-width: 650px) {
+  .details,
+  .gift-section { padding-right: 30px !important; padding-left: 30px !important; }
+  .dress-detail { padding: 36px 44px 31px !important; }
+  .gift-card { grid-template-columns: minmax(0, 1fr) 145px; padding: 38px 46px !important; }
+  .qr-placeholder { width: 138px !important; min-width: 138px !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dress-detail::after,
+  .gift-card::after,
+  .qr-placeholder { animation: none !important; }
+}
